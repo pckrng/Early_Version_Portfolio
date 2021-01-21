@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,66 @@
 #particles-js {
   width: 100vw;
   height: 100vh;
-  background: black;
+  background: #0f0f0f;
+  z-index: 100;
+}
+
+.container {
+  position: fixed;
+  top: 30%;
+  left: 42%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background: transparent;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  z-index: 100;
+}
+
+.headerIntro {
+  width: 400px;
+  height: 400px;
+  color: #ccd674;
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  background-color: rgba(39, 39, 39, 0.329);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.headerIntro a {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ccd674;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.headerIntro a:hover {
+  color: #292929;
+}
+
+.headerIntro h1 {
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 10px;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.headerIntro i {
+  padding: 20px;
+}
+
+.headerIntro i:hover {
+  color: #c7c4c4;
+  cursor: pointer;
+}
+
+.headerIntro .socialIcons {
+  margin-top: 110px;
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
