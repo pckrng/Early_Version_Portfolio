@@ -4,6 +4,11 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
 }
 /* Particles styling */
 #particles-js {
@@ -14,9 +19,9 @@
 }
 /* positioning */
 .container {
-    position: fixed;
+    position: absolute;
     top: 30%;
-    left: 42%;
+    left: 20%;
     margin-top: -50px;
     margin-left: -100px;
     background: transparent;
@@ -26,13 +31,13 @@
 }
 /* Juicy header css */
 .headerIntro {
-    width: 400px;
+    width: 500px;
     height: 400px;
     color: #ccd674;
     font-family: 'Archivo Black', sans-serif;
     text-align: center;
-    background-color: rgba(39, 39, 39, 0.329);
-    padding: 16px;
+    background-color: rgba(184, 184, 184, 0.171);
+    padding: 1rem;
     border-radius: 8px;
     a {
         font-family: 'Open Sans', sans-serif;
@@ -46,7 +51,7 @@
         color: rgb(41, 41, 41);
     }
     h1 {
-        font-size: 90px;
+        font-size: 96px;
         line-height: 90px;
         letter-spacing: 10px;
         text-align: justify;
