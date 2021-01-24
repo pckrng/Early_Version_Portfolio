@@ -64,4 +64,3 @@ function onWindowResize() {
 
   window.addEventListener('resize', onWindowResize);
 
- 
