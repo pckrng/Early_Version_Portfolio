@@ -9,7 +9,24 @@
 <body>
     <!-- Main landing content -->
     <div id="particles-js">
+        <nav>
+            <div class="dropDown">
+                
+                    <button>PROJECTS</button>
+                    <ul>
+                        <a href="#"><li>Html | CSS | JavaScript</li></a>
+                        <a href="#"><li>Three.Js</li></a>
+                        <a href="#"><li>jQuery</li></a>
+                        <a href="#"><li>WordPress</li></a>
+                        <a href="#"><li>Photo</li></a>
+                        <a href="#"><li>more info</li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container">
+            
         <div class="headerIntro">
             <h1>JOSEPH</h1>
                     <div class="socialIcons">
@@ -18,23 +35,28 @@
                         <i class="fab fa-github-square fa-3x"></i>
                         <i class="fas fa-envelope-square fa-3x"></i>
                     </div>
+                    <div class="innerText">
                     <h2>Junior Front-end Developer</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo obcaecati alias perspiciatis nisi consequatur a, architecto eaque reiciendis atque, saepe autem veniam dignissimos natus placeat rerum iure porro dicta? Dolorum facere in doloribus animi ullam perspiciatis blanditiis? Ipsum, perferendis?</p>
-            <!-- <a href="./home.index.html">Home</a>
-            <a href="./work.html">Work</a>
-            <a href="./contact.html">Contact</a> -->
-
+            
+            </div>
         </div>
         </div>
     </div>
 <!-- Scripts & fonts -->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+<script type="text/javascript" src="scripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('particles.json loaded..');
+    })</script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-<script> 
-    particlesJS.load('particles-js', 'particles.json', function(){
-    console.log('particles.json loaded..');
-    })
-</script>  
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> 
 </body>
 </html>

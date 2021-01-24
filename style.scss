@@ -22,8 +22,8 @@ p {
 /* positioning */
 .container {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 31%;
     margin-top: -50px;
     margin-left: -100px;
     background: transparent;
@@ -34,33 +34,23 @@ p {
 /* Juicy header css */
 .headerIntro {
     width: 60vw;
-    height: 100vh;
+    height: 30rem;
     color: #1d1b1b;
     font-family: 'Archivo Black', sans-serif;
-    background-color: rgba(238, 227, 227, 0.493);
-    padding-left: 6rem;
-    padding-top: 2rem;
-    border-radius: 8px;
-    a {
-        font-family: 'Open Sans', sans-serif;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #ccd674;
-        font-weight: bold;
-        padding: 20px;
-    }
-    a:hover {
-        color: rgb(41, 41, 41);
-    }
+    background-color: rgba(216, 216, 216, 0.418);
+    padding-left: 2rem;
+    border-radius: 16px;
+    z-index: -1;
+    background-blend-mode: difference;
     h1 {
         font-size: 10vw;
         letter-spacing: 10px;
         text-align: justify;
         margin-left: 10px;
-        
+        margin-bottom: 10px;
     }
     i {
-       padding: 1rem;
+       padding: .5rem;
        display: block;
     }
     i:hover{
@@ -70,14 +60,77 @@ p {
     .socialIcons {
         float: left;
         margin-top: -10px;
+        margin-left: 20px;
     }
     h2 {
         text-transform: uppercase;
-        padding-left: 12px;
+        padding-left: 10px;
         color: #c06969;
+        margin-top: -5px;
+    }
+  
+    p {
+        width: 80%;
+        position: absolute;
     }
 }
 
-.headerIntro p {
-    width: 70%;
-}
+   a {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgb(86, 90, 90);
+        padding: 5px;
+    }
+
+    a:hover {
+        color: #c06969;
+    } 
+
+    nav {
+        padding-top: 8rem;
+        margin-left: 60px;
+        width: auto;
+        position: absolute;
+        li {
+            padding-left: 16px;
+        }
+    }
+
+    @media screen and (max-width:768px){
+        nav{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .headerIntro {
+            width:80vw;
+            margin-left: -10vw;
+        }
+    }
+
+
+    .work ul {
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        transition: all 0.4s ease;
+        transform: translateY(10px);
+        padding-bottom: 8px;
+        font-family: 'open sans';
+        text-transform: uppercase;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 28px;
+        color: rgba(26, 27, 27, 0.87);
+    }
+
+    button:hover {
+            color: #c06969;
+            cursor: pointer;
+        }

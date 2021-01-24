@@ -21,8 +21,8 @@ p {
 /* positioning */
 .container {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 20%;
+  left: 31%;
   margin-top: -50px;
   margin-left: -100px;
   background: transparent;
@@ -35,26 +35,14 @@ p {
 /* Juicy header css */
 .headerIntro {
   width: 60vw;
-  height: 100vh;
+  height: 30rem;
   color: #1d1b1b;
   font-family: 'Archivo Black', sans-serif;
-  background-color: rgba(238, 227, 227, 0.493);
-  padding-left: 6rem;
-  padding-top: 2rem;
-  border-radius: 8px;
-}
-
-.headerIntro a {
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ccd674;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.headerIntro a:hover {
-  color: #292929;
+  background-color: rgba(216, 216, 216, 0.418);
+  padding-left: 2rem;
+  border-radius: 16px;
+  z-index: -1;
+  background-blend-mode: difference;
 }
 
 .headerIntro h1 {
@@ -62,10 +50,11 @@ p {
   letter-spacing: 10px;
   text-align: justify;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .headerIntro i {
-  padding: 1rem;
+  padding: .5rem;
   display: block;
 }
 
@@ -77,15 +66,85 @@ p {
 .headerIntro .socialIcons {
   float: left;
   margin-top: -10px;
+  margin-left: 20px;
 }
 
 .headerIntro h2 {
   text-transform: uppercase;
-  padding-left: 12px;
+  padding-left: 10px;
   color: #c06969;
+  margin-top: -5px;
 }
 
 .headerIntro p {
-  width: 70%;
+  width: 80%;
+  position: absolute;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #565a5a;
+  padding: 5px;
+}
+
+a:hover {
+  color: #c06969;
+}
+
+nav {
+  padding-top: 8rem;
+  margin-left: 60px;
+  width: auto;
+  position: absolute;
+}
+
+nav li {
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerIntro {
+    width: 80vw;
+    margin-left: -10vw;
+  }
+}
+
+.work ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  padding-bottom: 8px;
+  font-family: 'open sans';
+  text-transform: uppercase;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 28px;
+  color: rgba(26, 27, 27, 0.87);
+}
+
+button:hover {
+  color: #c06969;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
