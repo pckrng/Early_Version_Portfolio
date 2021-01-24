@@ -85,6 +85,7 @@ p {
 
     a:hover {
         color: #c06969;
+        font-weight: bold;
     } 
 
     nav {
@@ -97,7 +98,7 @@ p {
         }
     }
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1400px){
         nav{
             display: none;
         }
@@ -105,8 +106,14 @@ p {
 
     @media screen and (max-width: 768px){
         .headerIntro {
-            width:80vw;
-            margin-left: -10vw;
+            width:90vw;
+            margin-left: -7vw;
+        }
+        .innerText p{
+            width: 60%;
+        }
+        .headerIntro h1{
+            padding-left: 40px;
         }
     }
 
