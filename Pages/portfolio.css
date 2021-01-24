@@ -1,1 +1,86 @@
-/* No CSS *//*# sourceMappingURL=portfolio.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  background: #e6dada;
+}
+
+.scene,
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.work ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  padding-bottom: 8px;
+  font-family: 'open sans';
+  text-transform: uppercase;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 28px;
+  color: rgba(26, 27, 27, 0.87);
+  outline: none;
+}
+
+button:hover {
+  color: #c06969;
+  cursor: pointer;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #565a5a;
+  padding: 5px;
+}
+
+a:hover {
+  color: #c06969;
+  font-weight: bold;
+}
+
+nav {
+  padding-top: 8rem;
+  margin-left: 60px;
+  width: auto;
+  position: absolute;
+  z-index: 1000;
+}
+
+nav li {
+  padding-left: 16px;
+  list-style: none;
+}
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  background: #e6dada;
+  z-index: 10000;
+}
+/*# sourceMappingURL=portfolio.css.map */
