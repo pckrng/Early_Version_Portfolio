@@ -7,3 +7,6 @@
     .from(".innerText h2", {y: 1000})
     .from("p", {y: 1000, duration: 1})
     
+        function doFade() {
+  tl.restart();
+}

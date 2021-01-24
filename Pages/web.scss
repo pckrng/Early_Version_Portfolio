@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      background: #e6dada;
+}
+
+body {
+     overflow: hidden;
+   
+}
+
+
+.cards{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    margin-left: 15rem;
+    float: right;
+    position: fixed;
+    margin-top: -3rem;
+    position: absolute;
+}
+
+    @media screen and (max-width:1400px){
+        nav{
+            display: none;
+        }
+    }
+
+
+.card {
+    background-color: rgb(158, 158, 158);
+    width: 20vw;
+    height: 25vw;
+    min-height: 15rem;
+    min-width: 10rem;
+    padding: 1rem;
+    margin: 3vw;
+    transform: skew(-35deg, 15deg);
+    top: 0;
+    position: relative;
+    transition: top ease 0.3s;
+    transition: box-shadow ease-in 0.5s ;
+    box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.178);
+    z-index: 1000;
+}
+
+@media screen and (max-width:1000px){
+    .cards {
+        padding-top: 25rem;
+        margin-left: -2rem;
+    }
+    .card {
+        margin: 1.5rem;
+    }
+}
+
+.card:hover {
+    top: -10px;
+    cursor: pointer;
+    box-shadow:  2px 2px 10px 10px rgba(0, 0, 0, 0.288);
+    
+}
+
+  .work ul {
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        transition: all 0.4s ease;
+        transform: translateY(10px);
+        padding-bottom: 8px;
+        font-family: 'open sans';
+        text-transform: uppercase;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 28px;
+        color: rgba(26, 27, 27, 0.87);
+        outline: none;
+        text-transform: uppercase;
+    }
+
+    button:hover {
+            color: #c06969;
+            cursor: pointer;
+        }
+
+        
+    a {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #565a5a;
+    padding: 5px;
+    }
+
+
+    a:hover {
+    color: #c06969;
+    font-weight: bold;
+    }
+
+    
+    nav {
+    padding-top: 8rem;
+    margin-left: 60px;
+    width: auto;
+    position: absolute;
+    z-index: 1000;
+    }
+
+    nav li {
+  padding-left: 16px;
+  list-style: none;
+}
+
+
