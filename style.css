@@ -5,15 +5,16 @@
   overflow: hidden;
 }
 
-body {
-  background-color: #0f0f0f;
+p {
+  font-family: 'open sans';
+  padding-left: .75rem;
 }
 
 /* Particles styling */
 #particles-js {
   width: 100vw;
   height: 100vh;
-  background: #0f0f0f;
+  background: #e6dada;
   z-index: 100;
 }
 
@@ -33,13 +34,13 @@ body {
 
 /* Juicy header css */
 .headerIntro {
-  width: 500px;
-  height: 400px;
-  color: #ccd674;
+  width: 60vw;
+  height: 100vh;
+  color: #1d1b1b;
   font-family: 'Archivo Black', sans-serif;
-  text-align: center;
-  background-color: rgba(184, 184, 184, 0.171);
-  padding: 1rem;
+  background-color: rgba(238, 227, 227, 0.493);
+  padding-left: 6rem;
+  padding-top: 2rem;
   border-radius: 8px;
 }
 
@@ -57,26 +58,34 @@ body {
 }
 
 .headerIntro h1 {
-  font-size: 96px;
-  line-height: 90px;
+  font-size: 10vw;
   letter-spacing: 10px;
   text-align: justify;
   margin-left: 10px;
-  text-shadow: rgba(0, 0, 0, 0.384) 4px 4px 7px;
 }
 
 .headerIntro i {
-  padding: 20px;
-  text-shadow: rgba(0, 0, 0, 0.384) 4px 4px 7px;
+  padding: 1rem;
+  display: block;
 }
 
 .headerIntro i:hover {
-  color: #c7c4c4;
+  color: #c06969;
   cursor: pointer;
 }
 
 .headerIntro .socialIcons {
-  margin-top: 110px;
-  float: right;
+  float: left;
+  margin-top: -10px;
+}
+
+.headerIntro h2 {
+  text-transform: uppercase;
+  padding-left: 12px;
+  color: #c06969;
+}
+
+.headerIntro p {
+  width: 70%;
 }
 /*# sourceMappingURL=style.css.map */
