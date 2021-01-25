@@ -2,56 +2,64 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./web.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Portfolio</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <button>Html </button><br>
-        <button>CSS</button><br>
-        <button>JavaScript</button>
-        <ul>
-            <a href="../index.html">
-                <li>RETURN TO HOME PAGE</li>
-            </a>
-            <a href="./Pages/three.portfolio.html">
-                <li>project two</li>
-            </a>
-            <a href="./Pages/three.portfolio.html">
-                <li>project three</li>
-            </a>
-            <a href="./Pages/three.portfolio.html">
-                <li>project four</li>
-            </a>
-            <a href="./Pages/three.portfolio.html">
-                <li>project five</li>
-            </a>
-        </ul>
-    </nav>
-    <div class="cards">
-        <div class="card" style="background-image: url('./Assets/rg1.PNG')">
-            <button class="projectBtn">View project</button>
+    <!-- Main landing content -->
+    <div id="particles-js">
+            <h2 style="font-family: 'Archivo Black', sans-serif; margin-top: 20%; margin-left: 42%; position: fixed;">COMING SOON...</h2>
 
-        </div>
-        <div class="card" style="background-image: url('./Assets/blackTwo.PNG')">
-            <button class="projectBtn">View project</button>
-        </div>
-        <div class="card" style="background-image: url('./Assets/sam.PNG')">
-            <button class="projectBtn">View project</button>
-        </div>
-        <div class="card" style="background-image: url('./Assets/111Capture.PNG')">
-            <button class="projectBtn">View project</button>
-        </div>
-        <class class="card" style="background-image: url('./Assets/222Capture.PNG')">
-            <button class="projectBtn">View project</button>
+        <nav>
+            <div class="dropDown">
+        
+                <button>PROJECTS</button>
+                <ul>
+                    <a href="./Pages/static.portfolio.html">
+                        <li>Html | CSS | JavaScript</li>
+                    </a>
+                    <a href="./Pages/three.portfolio.html">
+                        <li>Three.Js</li>
+                    </a>
+                    <a href="./Pages/wordpress.index.html">
+                        <li>WordPress</li>
+                    </a>
+                    <a href="#">
+                        <li>Photo</li>
+                    </a>
+                </ul>
+                <button>MORE INFO</button>
+                <ul>
+                    <a href="./Pages/static.portfolio.html">
+                        <li>TECH STACK</li>
+                    </a>
+                    <a href="./Pages/three.portfolio.html">
+                        <li>ABOUT</li>
+                    </a>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </div>
+    <!-- Scripts & fonts -->
 
 
-    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
+    <script type="text/javascript" src="../scripts.js"></script>
+    <script src="../nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>particlesJS.load('particles-js', '../particles.json', function () {
+            console.log('particles.json loaded..');
+        })</script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </body>
 
 </html>
