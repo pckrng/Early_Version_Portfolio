@@ -8,7 +8,7 @@
 
 body {
   overflow: hidden;
-  background: #e6dada;
+  background: #ffffff;
 }
 
 .cards {
@@ -48,8 +48,8 @@ body {
   transition: -webkit-box-shadow ease-in 0.5s;
   transition: box-shadow ease-in 0.5s;
   transition: box-shadow ease-in 0.5s, -webkit-box-shadow ease-in 0.5s;
-  -webkit-box-shadow: 17px 11px 3px 0px rgba(75, 75, 75, 0.158);
-  box-shadow: 17px 11px 3px 0px rgba(75, 75, 75, 0.158);
+  -webkit-box-shadow: 17px 11px 3px 0px rgba(75, 75, 75, 0.358);
+  box-shadow: 17px 11px 3px 0px rgba(75, 75, 75, 0.358);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
