@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap');
 
+$yellow: #d8ce61;
+$brown: #6e6767f6;
+$angle: 8px;
+$angle-o: 4px;
 
 
 * {
@@ -17,17 +21,17 @@ body {
 
 .cards{
     display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
-    margin-left: 19rem;
-    float: right;
-    position: fixed;
-    margin-top: -3rem;
+    margin-left: 35rem;
+    width: 50vw;
     position: absolute;
+    margin-top: -3rem;
+    
    
 }
 
-    @media screen and (max-width:1400px){
+    @media screen and (max-width:1000px){
         nav{
             display: none;
         }
@@ -38,8 +42,8 @@ body {
     background-color: rgb(73, 73, 73);
     width: 20vw;
     height: 25vw;
-    min-height: 15rem;
-    min-width: 10rem;
+    min-height: 16rem;
+    min-width: 12rem;
     padding: 1rem;
     margin: 3vw;
     transform: skew(-35deg, 15deg);
@@ -53,7 +57,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 @media screen and (max-width:1000px){
@@ -89,7 +92,7 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
         background: none;
         border: none;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 28px;
+        font-size: 22px;
         color: rgba(26, 27, 27, 0.87);
         outline: none;
         text-transform: uppercase;
@@ -117,10 +120,10 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
 
     
     nav {
-    padding-top: 28rem;
+    padding-top: 24rem;
     margin-left: 60px;
     width: auto;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     }
 
@@ -131,15 +134,17 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
 
 
 .projectBtn {
+    background: $yellow;
+    top: 40%;
+    left: 15%;
+    font-size: 1.4vw;
     position: absolute;
-    font-size: 1.75vw;
-    background-color: #c06969;
-    border-radius: 50px;
-    width: 80%
-}
-.projectBtn:hover {
-   color: rgba(214, 214, 214, 0.712);
-   background-color: #b34141;
-   
+    box-shadow: 6px 6px rgb(146, 145, 145);
+    padding: 8px;
+     color: rgb(88, 88, 88);
 }
 
+.projectBtn:hover{
+        box-shadow: 3px 3px rgb(146, 145, 145);
+        color: rgb(83, 83, 83);
+    }

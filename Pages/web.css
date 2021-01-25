@@ -14,17 +14,16 @@ body {
 .cards {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
-  margin-left: 19rem;
-  float: right;
-  position: fixed;
-  margin-top: -3rem;
+  margin-left: 35rem;
+  width: 50vw;
   position: absolute;
+  margin-top: -3rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   nav {
     display: none;
   }
@@ -34,8 +33,8 @@ body {
   background-color: #494949;
   width: 20vw;
   height: 25vw;
-  min-height: 15rem;
-  min-width: 10rem;
+  min-height: 16rem;
+  min-width: 12rem;
   padding: 1rem;
   margin: 3vw;
   -webkit-transform: skew(-35deg, 15deg);
@@ -95,7 +94,7 @@ button {
   background: none;
   border: none;
   font-family: 'Archivo Black', sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   color: rgba(26, 27, 27, 0.87);
   outline: none;
   text-transform: uppercase;
@@ -120,10 +119,10 @@ a:hover {
 }
 
 nav {
-  padding-top: 28rem;
+  padding-top: 24rem;
   margin-left: 60px;
   width: auto;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
 }
 
@@ -133,15 +132,20 @@ nav li {
 }
 
 .projectBtn {
+  background: #d8ce61;
+  top: 40%;
+  left: 15%;
+  font-size: 1.4vw;
   position: absolute;
-  font-size: 1.75vw;
-  background-color: #c06969;
-  border-radius: 50px;
-  width: 80%;
+  -webkit-box-shadow: 6px 6px #929191;
+          box-shadow: 6px 6px #929191;
+  padding: 8px;
+  color: #585858;
 }
 
 .projectBtn:hover {
-  color: rgba(214, 214, 214, 0.712);
-  background-color: #b34141;
+  -webkit-box-shadow: 3px 3px #929191;
+          box-shadow: 3px 3px #929191;
+  color: #535353;
 }
 /*# sourceMappingURL=web.css.map */
