@@ -3,7 +3,10 @@ gsap.from("nav", {opacity: 0, duration: 1, delay: 1, x: -400});
 gsap.from("p", {opacity: 0, duration: 2, x: -100});
 gsap.from("h2", {opacity: 0, duration: 2, y: -100});
 gsap.from(".slider", {opacity: 0, duration: 2, x: 300});
-gsap.from(".stack", {opacity: 0, duration: 2, y: -300});
+gsap.from(".frontEnd1", {opacity: 0, duration: 2, x: -300});
+gsap.from(".frontEnd2", {opacity: 0, duration: 2, x:  -300});
+gsap.from(".frontEnd3", {opacity: 0, duration: 2, x: 300});
+gsap.from(".frontEnd4", {opacity: 0, duration: 2, x: 300});
 var i = 0; 			// Start Point
 var images = [];	// Images Array
 var time = 3000;	// Time Between Switch
