@@ -9,6 +9,7 @@
 body {
   overflow: hidden;
   background: #ffffff;
+  position: fixed;
 }
 
 p {
@@ -294,6 +295,13 @@ nav li {
   background-position: -100%;
 }
 
+.particles-js {
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 100;
+}
+
 .stack {
   position: absolute;
   height: 40vh;
@@ -336,5 +344,31 @@ nav li {
   height: 10%;
   top: 8vh;
   z-index: 23;
+}
+
+.contactMe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  position: relative;
+  height: 40px;
+  z-index: 23;
+  left: 25vw;
+  top: 10vh;
+  width: 20vw;
+  margin-top: 1rem;
+  border: 2px solid;
+  border-radius: 10px;
+  outline: none;
 }
 /*# sourceMappingURL=web.css.map */

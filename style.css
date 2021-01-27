@@ -248,4 +248,27 @@ button:hover {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
+.contact {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  left: 30vw;
+  top: 20vh;
+}
+
+input[type=message] {
+  height: 200px;
+  width: 62vw;
+}
+
+input {
+  height: 4vh;
+  width: 30vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  outline: none;
+  margin-right: 1vw;
+}
 /*# sourceMappingURL=style.css.map */

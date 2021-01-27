@@ -16,6 +16,7 @@ $angle-o: 4px;
 body {
      overflow: hidden;
      background: #ffffff;
+     position: fixed;
 }
 
 p {
@@ -279,7 +280,6 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
     padding: 16px;
 }
 
-
 #animated {
  font-size: 3.5vw;
  font-family: 'Archivo Black', sans-serif;
@@ -289,11 +289,17 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
  transition: 0.5s ease-out;
-
 }
 
 #animated:hover {
  background-position: -100%;
+}
+
+.particles-js {
+     width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 100;
 }
 
 .stack {
@@ -319,7 +325,6 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
     top: 22vh;
 }
 
-
 .frontEnd2 {
     position: absolute;
     height: 30%;
@@ -333,3 +338,30 @@ box-shadow: 17px 11px 3px 0px rgba(75,75,75,0.63);
     top: 8vh;
     z-index: 23;
 }
+
+.contactMe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    position: relative;
+    height: 40px;
+    z-index: 23;
+    left: 25vw;
+    top: 10vh;
+    width: 20vw;
+    margin-top: 1rem;
+    border: 2px solid;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+
+
+

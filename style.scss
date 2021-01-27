@@ -46,15 +46,13 @@ p {
         font-size: 10vw;
         letter-spacing: 10px;
         text-align: start;
-       
         margin-left: 10px;
         margin-top: -2rem;
-       
     }
-    i {
-       padding: .5rem;
-       display: block;
-    }
+        i {
+        padding: .5rem;
+        display: block;
+        }
     i:hover{
         color: #c06969;
         cursor: pointer;
@@ -70,14 +68,13 @@ p {
         color: #c06969;
         margin-top: -5px;
     }
-  
     p {
         width: 70%;
         position: absolute;
     }
 }
 
-   a {
+a {
         font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
         text-decoration: none;
@@ -108,7 +105,6 @@ p {
     @media screen and (min-width:1100px){
         .hamburger, .icon1, .icon2, .icon3, .navbar--middle a, .navbar--middle {
             display: none;
-           
         }
     }
 
@@ -156,88 +152,105 @@ p {
             cursor: pointer;
         }
 
- .innerText {
-     margin-bottom: 5rem;
- }
+    .innerText {
+        margin-bottom: 5rem;
+    }
 
+    .burgerItems {
+        background-color: white;
+        width:100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1200;
+        padding-top: 50%;
+        padding-left: 20%;
+    }
 
+    .navbar--middle {
+    display: none;
+    margin-left: 26%;
+    position: fixed;
+    display: none;
+    }
 
- .burgerItems {
-     background-color: white;
-     width:100%;
-     height: 100vh;
-     position: fixed;
-     z-index: 1200;
-     padding-top: 50%;
-     padding-left: 20%;
- }
+    .navbar--middle a {
+    display: inline-flex;
+    padding: 8px 8px 8px 32px;
+    }
 
- .navbar--middle {
-  display: none;
-  margin-left: 26%;
-  position: fixed;
-  display: none;
+    .hamburger {
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    }
+
+    .icon1 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: 0.4s;
+    }
+
+    .icon2 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: 0.4s;
+    }
+
+    .icon3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: 0.4s;
+    }
+
+    /* Rotate first bar */
+
+    .change .icon1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    /* Fade out the second bar */
+
+    .change .icon2 {
+    opacity: 0;
+    }
+
+    /* Rotate last bar */
+
+    .change .icon3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    }
+    
+    .contact {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 30vw;
+    top: 20vh;
+    }
+
+    input[type=message] {
+    height: 200px;
+    width: 62vw;
+    }
+
+input {
+    height: 4vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    outline: none;
+    margin-right: 1vw;
 }
-
-.navbar--middle a {
-  display: inline-flex;
-  padding: 8px 8px 8px 32px;
-}
-
-.hamburger {
-  display: inline-block;
-  margin-top: 1rem;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-
-.icon1 {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-  border-radius: 5px;
-  transition: 0.4s;
-}
-
-.icon2 {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-  border-radius: 5px;
-  transition: 0.4s;
-}
-
-.icon3 {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-  border-radius: 5px;
-  transition: 0.4s;
-}
-
-
-/* Rotate first bar */
-
-.change .icon1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-
-/* Fade out the second bar */
-
-.change .icon2 {
-  opacity: 0;
-}
-
-
-/* Rotate last bar */
-
-.change .icon3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
- 
