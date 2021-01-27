@@ -276,4 +276,57 @@ nav li {
   z-index: 1000;
   padding: 16px;
 }
+
+#animated {
+  font-size: 2vw;
+  font-family: 'Archivo Black', sans-serif;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #CCC), color-stop(50%, #FF5858), to(#CC2E5D));
+  background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+#animated:hover {
+  background-position: -100%;
+}
+
+.stack {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 30vh;
+}
+
+.frontEnd1 {
+  position: absolute;
+  height: 50%;
+  z-index: 22;
+}
+
+.frontEnd2 {
+  position: absolute;
+  height: 30%;
+  top: 1vh;
+  z-index: 21;
+}
+
+.frontEnd3 {
+  position: absolute;
+  height: 10%;
+  top: 7vh;
+  z-index: 23;
+}
 /*# sourceMappingURL=web.css.map */
