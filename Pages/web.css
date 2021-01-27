@@ -278,11 +278,11 @@ nav li {
 }
 
 #animated {
-  font-size: 2vw;
+  font-size: 3.5vw;
   font-family: 'Archivo Black', sans-serif;
   text-decoration: none;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #CCC), color-stop(50%, #FF5858), to(#CC2E5D));
-  background: linear-gradient(to right, #CCC 50%, #FF5858 50%, #CC2E5D);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #565a5a), color-stop(50%, #FF5858), to(#CC2E5D));
+  background: linear-gradient(to right, #565a5a 50%, #FF5858 50%, #CC2E5D);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -296,7 +296,7 @@ nav li {
 
 .stack {
   position: absolute;
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +314,14 @@ nav li {
   position: absolute;
   height: 50%;
   z-index: 22;
+  top: 15vh;
+}
+
+.frontEnd4 {
+  position: absolute;
+  height: 50%;
+  z-index: 22;
+  top: 22vh;
 }
 
 .frontEnd2 {
@@ -326,7 +334,7 @@ nav li {
 .frontEnd3 {
   position: absolute;
   height: 10%;
-  top: 7vh;
+  top: 8vh;
   z-index: 23;
 }
 /*# sourceMappingURL=web.css.map */
